@@ -1,0 +1,64 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Consignas: \n";
+    cout << "1-Realizar la carga del lado de un cuadrado, mostrar por pantalla el perimetro del mismo";
+    double ladoCuadrado, perimetro;
+    cout << "\nIngrese la dimension de un lado del cuadrado: ";
+    cin >> ladoCuadrado;
+    perimetro = 4 * ladoCuadrado;
+    cout << "El perimetro del cuadrado es: ";
+    cout << perimetro;
+    cin.get();
+    cin.get();
+    cout << "2-Ingresar cuatro números, calcular e informar la suma de los dos primeros y el producto del tercero y el cuarto";
+    double num1, num2, num3, num4, suma, producto;
+    cout << "\nIngrese el primer numero: ";
+    cin >> num1;
+    cout << "Ingrese el segundo numero: ";
+    cin >> num2;
+    cout << "Ingrese el tercer numero: ";
+    cin >> num3;
+    cout << "Ingrese el cuarto numero: ";
+    cin >> num4;
+    suma = num1 + num2;
+    cout << "La suma del primer y segundo numero es: ";
+    cout << suma;
+    cout << "\nEl producto del tercero y el cuarto es: ";
+    producto = num3 * num4;
+    cout << producto;
+    cin.get();
+    cin.get();
+    cout << "3-Ingresar cuatro números, informar su suma y promedio";
+    double nume1, nume2, nume3, nume4, suma1, promedio;
+    cout << "\nIngrese el primer numero: ";
+    cin >> nume1;
+    cout << "Ingrese el segundo numero: ";
+    cin >> nume2;
+    cout << "Ingrese el tercer numero: ";
+    cin >> nume3;
+    cout << "Ingrese el cuarto numero: ";
+    cin >> nume4;
+    suma1 = nume1+nume2+nume3+nume4;
+    cout << "La suma es: ";
+    cout << suma1;
+    cout << "\nEl promedio: ";
+    promedio = suma1/4;
+    cout << promedio;
+    cin.get();
+    cin.get();
+    cout << "3-Se debe desarrollar un programa que pida el ingreso del precio de un artículo y la cantidad que lleva el cliente.Mostrar lo que debe abonar el comprador";
+    double precio,total;
+    int cantidad;
+    cout << "\nIngrese el precio del producto: ";
+    cin >> precio;
+    cout << "Ingrese unidades compradas: ";
+    cin >> cantidad;
+    cout << "El total a pagar es: ";
+    total=precio*cantidad;
+    cout<<total;
+    cin.get();
+    cin.get();
+  }
