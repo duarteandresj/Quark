@@ -1,4 +1,8 @@
-# <center> Excepciones </center>
+<div align="center">
+
+# Excepciones
+
+</div>
 
 ## ¿Qué es una excepción?
 
@@ -14,7 +18,7 @@ Para realizar el manejo de excepciones se utilizan las palabras claves:
 
 La palabra clave **try**, es un bloque de código el cual se usara para excepciones especificas, después de poner try se debe poner llaves({}) tanto de apertura como de cierre, todo lo que se encuentre dentro de estas llaves se tratara de ejecutar de forma normal. En caso de que suceda algo anormal se realizara el tratamiento en catch y throw
 
-```
+```c++
 try{
     //tu codigo
 }
@@ -24,7 +28,7 @@ try{
 
 El **throw** es el encargado de lanzar las excepciones que puedan surgir en el try, una vez lanzada la excepción esta debe ser atrapada por un catch, cabe aclarar que throw no se usa exclusivamente en la sección de try, puede ser dentro de una función, pero es importante tener un catch para que no se ejecute una sección que pueda romper el ciclo del programa.
 
-```
+```c++
 #include <iostream>
 using namespace std;
 
@@ -46,7 +50,7 @@ int main(){
 
 El **catch** es el encargado de atrapar las excepciones que se lancen, para evitar interrupciones abruptas. Puedes modificar que tipos de excepciones quieres atrapar,por lo que un bloque de try puede tener varios catch, ya sea de int, string, u otros datos, todo dependera de lo que necesites.
 
-```
+```c++
 try {
   // tu codigo
 }
@@ -71,7 +75,7 @@ Si se utilizan los tres puntos (...) quiere decir que el catch detectará cualqu
 
 Con esto nos referimos a que se pueden especificar que tipos de excepciones puede lanzar una función. Esto se hace mediante la adición de una lista de tipos de excepciones entre paréntesis después del prototipo de la función o del método.
 
-```
+```c++
 void miFuncion() throw(int, string);
 ```
 
@@ -79,7 +83,7 @@ En este ejemplo la función solo permite lanzar excepciones del tipo int y strin
 
 Tambien se puede usar la palabra clave throw para indicar que la función no generara ningun tipo de excepción.
 
-```
+```c++
 void miFuncion()throw();
 ```
 
@@ -104,14 +108,14 @@ En C++ existe una lista de excepciones standar o predefinidas, que son utilizada
 
 Como usuario puedes definir tus propias excepciones, overraideando **std::exception,std::logic_error** o **std::runtime_error**, en alguna clase o estructura como por ejemplo:
 
-```
+```c++
 class MiExcepción : public std::runtime_error {
 public:
   MiExcepción(const std::string &msg) : std::runtime_error(msg) {}
 };
 ```
 
-```
+```c++
 #include <iostream>
 #include <exception>
 using namespace std;
