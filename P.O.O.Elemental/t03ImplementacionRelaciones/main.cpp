@@ -1,5 +1,8 @@
 #include <iostream>
 #include "ManagementBank.h"
+
+//PARA COMPILAR EN C++ TENGO QUE HACER G++ *.Cpp ya que al solo incluir la informacion del fichero no compila los demas archivos. Si no deberia realizar todos los encabezados en archivos cpp y me ahoraria este problema
+/* #include solo copia las cabeceras en el main, no su implementación.*/
 using namespace std;
 ManagementBank *bank;
 
